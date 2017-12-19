@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d;
+	printf("Enter any four numbers");
+	scanf("%d%d%d%d",&a,&b,&c,&d);
+	if(a<b&&a<c&&a<d)
+	printf("The least number is %d",a);
+	else if(b<c&&b<a&&b<d)
+	printf("The least number is %d",b);
+	else if(c<a&&c<b&&c<d)
+	printf("The least number is %d",c);
+	else
+	printf("The least number is %d",d);
+	return 0;
+}
