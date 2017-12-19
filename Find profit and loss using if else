@@ -1,0 +1,19 @@
+
+
+#include<stdio.h>
+int main()
+{
+	int cp,sp,diff,a;
+printf("Enter cost price");
+scanf("%d",&cp);
+printf("Enter selling price");
+scanf("%d",&sp);
+diff=sp-cp;
+if(diff>0) 
+printf("It is profit and profit amount is %d",diff);
+else if(diff==0)
+printf("Neither loss or profit");
+else
+printf("You're in losss and loss amount is %d",diff);
+return 0;
+}
