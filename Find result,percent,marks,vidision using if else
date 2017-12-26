@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d,e,total,percent,result,division;
+	printf("Enter marks Physics:");
+	scanf("%d",&a);
+	printf("Enter marks Maths:");
+	scanf("%d",&b);
+	printf("Enter marks C programming:");
+	scanf("%d",&c);
+	printf("Enter marks Chemistry:");
+	scanf("%d",&d);
+	printf("Enter marks Digital Logic:");
+	scanf("%d",&e);
+	total=a+b+c+d+e;
+	printf("\nThe total marks is %d",total);
+	percent=(total*100)/500;
+	printf("\nthe percent is %d%%",percent);
+	if(percent>=80)
+	printf("\nDistinction");
+	else if(percent>=60&&percent<80)
+	printf("\nFirst Division");
+	else if(percent>=40&&percent<60)
+	printf("\nSecond Division");
+	else 
+	printf("\nFail");
+	if(a<32&&b<32&&c<32&&d<32&&e<32)
+	printf("\nYou're fail");
+	else
+	printf("\nYou're pass");
+	getch();
+	return 0;
+}
