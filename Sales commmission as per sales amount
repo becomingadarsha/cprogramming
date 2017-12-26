@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int amount,a,b,c;
+	printf("Enter the sales amount:");
+	scanf("%d",&amount);
+	if(amount<5000)
+	printf("The commision is zero");
+    else if(amount>=5000&&amount<10000)
+    {
+    	a=(amount*5)/100;
+    	printf("The commission is %d",a);
+	}
+	else if(amount<=10000&&amount<15000)
+    {
+    	b=(amount*7)/100;
+    	printf("The commission is %d",b);
+	}
+	else
+    {
+    	c=(amount*10)/100;
+    	printf("The commission is %d",c);
+	}
+	return 0;
+}
