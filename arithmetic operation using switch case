@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+int sum,sub,product,div,a,b;
+char choice;
+printf("Enter first number:");
+scanf("%d",&a);
+printf("Enter second number:");
+scanf("%d",&b);
+printf("Press \n+ for addition \n- for subraction \n* for multiplication \n/ for division");
+scanf(" %c",&choice);
+switch(choice)
+{
+    case'+':
+{
+	sum=a+b;
+	printf("Sum is %d",sum);
+		break;
+	    }
+	    case'-':
+	{
+	sub=a-b;
+	printf("Subraction is %d",sub);
+		break;
+	}
+	case'*':
+	{
+	product=a*b;
+	printf("Product is %d",product);
+		break;
+	}
+	case'/':
+	{
+	div=a/b;
+	printf("Division is %d",div);
+		break;
+	}
+		default:
+		printf("Choice is invalid");
+	}
+	return 0;
+}
+	
+	
+		
