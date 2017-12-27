@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+int l,b,area,peri;
+char choice;
+printf("Enter length of rectangle");
+scanf("%d",&l);
+printf("Enter breadth of rectangle");
+scanf("%d",&b);
+printf("Press \na for area \np for perimeter");
+scanf(" %c",&choice);
+switch(choice)
+{
+	case'a':
+		{
+		area=l*b;
+		printf("Area is %d",area);
+		break;
+	    }
+	case'p':
+		{
+		peri=2*(l+b);
+		printf("Perimeter is %d",peri);
+		break;
+	}
+	default:
+		printf("Choice is invalid");
+	}
+	return 0;
+}
