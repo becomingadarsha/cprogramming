@@ -5,7 +5,6 @@ int main()
     float a, b, c;
     float root1, root2, imaginary;
     float discriminant;
-    
     printf("Enter values of a,b,c of quadratic equation:");
     scanf("%f%f%f",&a,&b,&c);
     discriminant = ((b*b)-(4*a*c));
